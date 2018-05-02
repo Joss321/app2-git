@@ -1,41 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <widget xmlns = "http://www.w3.org/ns/widgets"
-  xmlns:gap ="http://phonegap.com/ns/1.0"
-  id = "com.phonegap.app2"
-  version = "1.0.0">
+   xmlns:gap = "http://phonegap.com/ns/1.0"
+   id ="com.phonegap.app2"
+   version ="1.0.0">
+   
+   <name> app2 Datos dek Alumno</name>
+   
+   <description>
+    Aplicacion que muestra los Datos del ALUMNO
+   </description>
+   
+  <author href="https://build.phonegap.com" email="joos210514@gmail.com">
+     Joselyn Gonzalez Palacios
+  </author>
   
-  <name>app2 Datos del Alumno</name>
+  <!--Personaliza la aplicacion y plataforma -->
+  <preference name="orientacion" value="dafult" />
+  <!-- <preference name="orientation"  value="portrait" />
+  <preference name="orientation"  value="landscape"/> -->
+  <preference name="target-device" value="universal"/>
+  <preference name="fullscreen"  value="true"/>
+  <preference name="android-installLocation" value="auto"/>
+  <preference name="permissions" value="INTERNET"/>
   
-  <descripcion>
-  Aplicacion que muestra los Datos del Alumno
-  </descripcion>
-  
-  <author href="https://phonegap.com" email="joos210514s@gmail.com">
-  	Joselyn Gonzalez Palacios
-	</author>
+  <!--Para accesar a paginas en internet-->
+    <allow-intent href="https://*/*"/>
+	<acces origin="https://*/*"/>
+	<allow-intent href="http://*/*"/>
+	<acces origin="http://*/*"/>
+	<plugin name="cordova-plugin-whitelist" source="npm"/>
 	
-	<!--personaliza la aplicacion y plataforma-->
-	<preference name="orientation" value="default"/>
-	<!--< preference name="orientation" value="portrait"/>
-	<preference name="orientation" value="landscape"/>-->
-	<preference name="target-device " value="universal"/>
-	<preference name="fullscreen" value="true"/>
-	<preference name="android-installLocation" value="auto"/>
-	<preference name="permissions" value="INTERNET"/>
-	
-	<!--Plugins-->
-	<!--Core plugins-->
-	<pluguin name="cordova-plugin-device"spec="~1.1.4"/>
-	<pluguin name="cordova-plugin-vibration"spec="~2.1.3"/>
-	<pluguin name="cordova-plugin-dialogs"spec="~1.3.1"/>
-	
-<!--<plugin name="cordova-plugin-geolocation" source="npm"/> -->
-  <!--Third part plugins-->
+  <!-- Plugins -->
+  <!-- Core plugins -->
+  <plugin name="cordova-plugin-device" spec="~1.1.4"/>
+  <plugin name="cordova-plugin-vibration" spec="~2.1.3"/>
+  <plugin name="cordova-plugin-dialogs" spec="~1.3.1"/>
   
-  <!--Colocar iconoapp-->
-  
-  <icon scr="res/android/mdpi.png"/>
-  
-  </widget>
+  <!-- <plugin name="cordova-plugin-geolocation" source="npm"/> -->
+    <!-- Third part plugins -->
 	
+	<!-- Colocar icono app -->
+	
+	<icon src="res/android/mdpi.png"/>
+	
+</widget>
