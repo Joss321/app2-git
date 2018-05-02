@@ -2,10 +2,10 @@
 
 <widget xmlns = "http://www.w3.org/ns/widgets"
   xmlns:gap ="http://phonegap.com/ns/1.0"
-  id = "com.phonegap.app1"
+  id = "com.phonegap.app2"
   version = "1.0.0">
   
-  <name> app2 Datos del Alumno</name>
+  <name>app2 Datos del Alumno</name>
   
   <descripcion>
   Aplicacion que muestra los Datos del Alumno
